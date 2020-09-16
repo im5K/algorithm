@@ -9,16 +9,10 @@ var minSubArrayLen = function(s, nums) {
         sum +=nums[indexb];
         while(sum>=s){
             ans = Math.min(ans,indexb-indexa+1)
-            sum -=nums[indexa++]
-            
-
+            sum -=nums[indexa++]   
         }
-
     }
   return ans==Number.MAX_SAFE_INTEGER?0:ans
-
-  
 };
-
 array =[5,1,3,5,10,7,4,9,2,8]
 console.log(minSubArrayLen(15,array),'good')
