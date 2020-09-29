@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            float: left;
+            background-color: coral;
+            margin:0 10px 0 10px;
+        }
+        #bar{
+            clear: both;
+            background-color: grey;
+            height: 80px;
+        }
+        #border{
+            clear: both;
+          
+        }
+    </style>
+</head>
+<body>
+    <!-- 撑高法 -->
+    <div>
+        <ul style="height:20px">
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+    </div>
+   
+    <div id="bar"></div>
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+    </div>
+    <div id="border"></div>
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+    </div>
+    <div id="bar"></div>
+    <!-- 内墙法 -->
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+        <div id="border"></div>
+    </div>
+   
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+       
+    </div>
+    <div id="bar"></div>
+    <!-- overflow hidden -->
+    <div>
+        <ul style="overflow: hidden;">
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+       
+    </div>
+   
+    <div>
+        <ul>
+            <li>大学</li>
+            <li>小学</li>
+             <li>幼儿园</li>
+        </ul>
+    </div>
+</body>
+</html>

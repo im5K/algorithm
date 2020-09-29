@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: flex-start;
+        }
+        .c1{
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            background-color: red;
+           
+        }
+        .c2{
+            height: 100px;
+            width: 100px;
+            margin: 25px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="c1"></div>
+        <div class="c2"></div>
+    
+<script>
+    function test() {
+        console.log('good')
+        let timeout = null
+        return function(){
+            console.log(window)
+          if(!timeout){
+              timeout = setTimeout(function(){
+                  console.log('bad')
+                 // timeout = null
+              },10000)
+          } 
+        }
+    }
+    window.addEventListener('click',test())
+</script>
+
+</body>
+</html>
