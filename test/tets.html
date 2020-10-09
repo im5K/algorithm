@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function a(){
+            console.log('good night')
+        }
+        let b = new a()
+        console.log('b.__proto__',b.__proto__,'\n',
+        'a_proto_',a.__proto__.__proto__,'\n',
+        'prototype',a.prototype)
+    </script>
+</body>
+</html>

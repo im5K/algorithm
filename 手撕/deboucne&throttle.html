@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const debounce = function(func,time){
+    let timeout = null
+    return function(){
+        clearTimeout(timeout)
+        timeout = setTimeout(()=>{
+            func.apply(this,arguments)
+        },time)
+    }
+
+}
+const throttle = function(func,time){
+    flag = false
+    return function(){
+        if(!flag){
+            flag = true
+           setTimeout(()=>{
+            func.apply(this,arguments)
+            flag = false
+        },time)
+        }
+        
+    }
+
+}
+const test = function(){
+    console.log('good')
+}
+        window.addEventListener('click',debounce(test,1000))
+        window.addEventListener('mousewheel',throttle(test,1000))
+    </script>
+</body>
+</html>

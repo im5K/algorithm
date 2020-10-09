@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1" class="box1"></div>
+    <div id="box2" class="box2"></div>
+    <div id="box3" class="box3"></div>
+    <div id="box4" class="box4"></div>
+</body>
+<script>
+    ele = document.querySelectorAll('div')
+    console.log('divlist',ele,typeof ele)
+    array1 = Array.from(ele)
+    //call可以使用非自己对象的方法
+    array2 = Array.prototype.slice.call(ele)
+    // 解构函数
+    array3 = [...ele]
+    //连接数组,必须用apply，一个一个连接
+    array4 = Array.prototype.concat.apply([],ele)
+   
+    console.log(
+        'arraylist1',array1,'\n',
+        'arraylist2',array2,'\n',
+        'arraylist3',array3,'\n',
+        'arraylist4',array4,'\n',
+    )
+</script>
+</html>
