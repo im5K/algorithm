@@ -2,7 +2,6 @@
 function add() {
     const _args = [...arguments];
     function fn() {
-      debugger
       _args.push(...arguments);
       console.log(_args) 
       return fn;
