@@ -7,13 +7,10 @@
 </head>
 <body>
     <script>
-        function a(){
-            console.log('good night')
-        }
-        let b = new a()
-        console.log('b.__proto__',b.__proto__,'\n',
-        'a_proto_',a.__proto__.__proto__,'\n',
-        'prototype',a.prototype)
+var b = 3
+var a = 2
+[a, b] = [b, a]
+console.log(a,b)
     </script>
 </body>
 </html>

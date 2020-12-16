@@ -3,7 +3,7 @@ function add() {
     const _args = [...arguments];
     function fn() {
       _args.push(...arguments);
-      console.log(_args) 
+     // console.log(_args) 
       return fn;
     }
     fn.toString = function() {
@@ -17,10 +17,10 @@ function add() {
   }
 
   test.toString = function(){
-    return 123
+    return 123 
   }
 
-  console.log(test)
+  //console.log(test)
 
-//good = add(1,2,3,4)
-//console.log(-2>>>0)
+good = add(1,2,3,4)(3)(5)
+console.log(good)

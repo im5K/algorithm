@@ -12,14 +12,18 @@
         .c1{
             height: 100px;
             width: 100px;
-            margin: 100px;
+           border: 20px solid transparent;
+           border: ;
+           
             background-color: red;
            
         }
         .c2{
+            position: relative;
+            left:-200px;
             height: 100px;
             width: 100px;
-            margin: 25px;
+           
             background-color: yellow;
         }
     </style>
@@ -30,20 +34,8 @@
         <div class="c2"></div>
     
 <script>
-    function test() {
-        console.log('good')
-        let timeout = null
-        return function(){
-            console.log(window)
-          if(!timeout){
-              timeout = setTimeout(function(){
-                  console.log('bad')
-                 // timeout = null
-              },10000)
-          } 
-        }
-    }
-    window.addEventListener('click',test())
+
+    
 
     
 </script>

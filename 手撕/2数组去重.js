@@ -34,7 +34,7 @@ const Mapfilter=function(arr){
     return re   
    
 }
-
+//filter
 const Filter=function(arr){
 
     return arr.filter((item,index)=>{
