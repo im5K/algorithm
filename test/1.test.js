@@ -1,1 +1,1 @@
-console.log("a"<="b","b"<="z")
+console.log(Math.max(2,3,undefined||0))
